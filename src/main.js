@@ -1,23 +1,34 @@
+import { Boot } from "./scenes/Boot";
+import { ClickerGame } from "./scenes/ClickerGame";
 import { Game } from "phaser";
-import { scenes_config } from "./scenes_config";
+import { GameOver } from "./scenes/GameOver";
+import { MainMenu } from "./scenes/MainMenu";
+import { Preloader } from "./scenes/Preloader";
 
-// More information about config: https://newdocs.phaser.io/docs/3.70.0/Phaser.Types.Core.GameConfig
+//  Find out more information about the Game Config at: https://newdocs.phaser.io/docs/3.70.0/Phaser.Types.Core.GameConfig
 const config = {
     type: Phaser.AUTO,
-    width: 960,
-    height: 540,
+    width: 1024,
+    height: 768,
     parent: "phaser-container",
-    backgroundColor: "#1c172e",
-    pixelArt: true,
-    max: {
-        width: 800,
-        height: 600,
-    },
+    backgroundColor: "#028af8",
     scale: {
         mode: Phaser.Scale.FIT,
         autoCenter: Phaser.Scale.CENTER_BOTH
     },
-    scene: scenes_config
+    physics: {
+        default: "arcade",
+        arcade: {
+            gravity: { y: 400 }
+        }
+    },
+    scene: [
+        Boot,
+        Preloader,
+        MainMenu,
+        ClickerGame,
+        GameOver
+    ]
 };
 
 export default new Game(config);
