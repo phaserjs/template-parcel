@@ -33,7 +33,7 @@ Once the server is running you can edit any of the files in the `src` folder. Pa
 
 ## Template Project Structure
 
-We have provided a basic project structure to get you started. The structure is as follows:
+We have provided a default project structure to get you started. This is as follows:
 
 - `index.html` - A basic HTML page to contain the game.
 - `src` - Contains the game source code.
@@ -57,10 +57,12 @@ To load static files such as audio files, videos, etc place them into the `publi
 ```js
 preload ()
 {
-    //  This is an example of an imported bundled image (remember to import it at the top of this file):
+    //  This is an example of an imported bundled image.
+    //  Remember to import it at the top of this file
     this.load.image('logo', logoImg);
 
-    //  This is an example of loading a static image from the public folder:
+    //  This is an example of loading a static image
+    //  from the public/assets folder:
     this.load.image('background', 'assets/bg.png');
 }
 ```
