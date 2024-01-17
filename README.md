@@ -57,9 +57,15 @@ If you want to customize your build, such as adding plugin (i.e. for loading CSS
 
 [Click to get more info about Parcel](https://parceljs.org/).
 
-## Cache problems
+## Cache Issues
 
-If you experience problems with the cache, try deleting the .parcel-cache folder and restarting the browser with the cache cleared.
+### Problem Description
+
+When a file is moved out of the `public` folder and then placed back into it, Parcel fails to properly reload the file due to cache management issues. This can result in recent changes not being immediately reflected in the browser.
+
+### Possible Solution
+
+Try deleting the .parcel-cache folder and restarting the browser with the cache cleared.
 
 ## Deploying Code
 
