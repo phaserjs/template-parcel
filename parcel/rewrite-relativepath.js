@@ -13,8 +13,10 @@ module.exports = new Reporter({
                     htmlContent = htmlContent.replace(/_relativeroute_/g, '.');
                     fs.writeFileSync(index.filePath, htmlContent);
                 }
-            } 
-            process.stdout.write(`💜💜💜 Phaser Studio - Powered by coffee, anime, pixels and love. 💜💜💜\n`);
+            }
+            const line = "---------------------------------------------------------";
+            const msg = `💜💜💜 Tell us about your game! - games@phaser.io 💜💜💜`;
+            process.stdout.write(`${line}\n${msg}\n${line}\n`);
             process.stdout.write(`✨ Built ${bundles.length} bundles in ${event.buildTime}ms!\n`);
         }
     }
