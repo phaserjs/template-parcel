@@ -1,6 +1,6 @@
 {
     "name": "template-parcel",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A Phaser 3 template using Parcel 2 as the bundler.",
     "source": "./index.html",
     "browserslist": "> 0.25%, last 2 versions, not dead",
