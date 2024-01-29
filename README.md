@@ -78,7 +78,7 @@ In order to deploy your game, you will need to upload *all* of the contents of t
 
 ### Parcel
 
-If you want to customize your build, such as adding plugins for loading CSS or fonts, modify the `parcel/.parcel-*` file for cross-project changes. Or, you can create new Parcel configuration files and target them from specific npm tasks defined in `package.json`. Please see the [Parcel documentation](https://parceljs.org) for more information.
+If you want to customize your build, such as adding plugins for loading CSS or fonts, modify the `parcel/.parcel.*` file for cross-project changes. Or, you can create new Parcel configuration files and target them from specific npm tasks defined in `package.json`. Please see the [Parcel documentation](https://parceljs.org) for more information.
 
 ## Cache Issues
 
