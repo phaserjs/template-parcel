@@ -6,8 +6,8 @@ This is a Phaser 3 project template that uses Parcel for bundling. It supports h
 
 This template has been updated for:
 
-- [Phaser 3.70.0](https://github.com/phaserjs/phaser)
-- [Parcel 2.11](https://github.com/parcel-bundler/parcel)
+- [Phaser 3.80.0](https://github.com/phaserjs/phaser)
+- [Parcel 2.11.0](https://github.com/parcel-bundler/parcel)
 
 ![screenshot](screenshot.png)
 
