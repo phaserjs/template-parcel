@@ -1,12 +1,14 @@
 {
     "name": "template-parcel",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "A Phaser 3 template using Parcel 2 as the bundler.",
     "source": "./index.html",
     "browserslist": "> 0.25%, last 2 versions, not dead",
     "scripts": {
-        "dev": "parcel index.html --no-cache --config ./parcel/.parcel.dev --open",
-        "build": "parcel build index.html --public-url _relativeroute_ --no-source-maps --log-level error --config ./parcel/.parcel.prod"
+        "dev": "node log.js dev & parcel index.html --no-cache --config ./parcel/.parcel.dev --open",
+        "build": "node log.js build & parcel build index.html --public-url _relativeroute_ --no-source-maps --log-level error --config ./parcel/.parcel.prod",
+        "dev-nolog": "parcel index.html --no-cache --config ./parcel/.parcel.dev --open",
+        "build-nolog": "parcel build index.html --public-url _relativeroute_ --no-source-maps --log-level error --config ./parcel/.parcel.prod"
     },
     "repository": {
         "type": "git",
@@ -28,7 +30,7 @@
         "process": "^0.11.10"
     },
     "dependencies": {
-        "phaser": "^3.80.1"
+        "phaser": "^3.85.0"
     },
     "staticFiles": {
         "staticPath": "public"
