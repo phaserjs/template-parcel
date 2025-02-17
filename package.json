@@ -30,7 +30,7 @@
         "process": "^0.11.10"
     },
     "dependencies": {
-        "phaser": "^3.88.0"
+        "phaser": "^3.88.2"
     },
     "staticFiles": {
         "staticPath": "public"
